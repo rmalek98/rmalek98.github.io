@@ -1,0 +1,148 @@
+/* https://colorhunt.co/palette/fff8ea9e7676815b5b594545 */
+/* Media queries for mobile */
+
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        padding-bottom: 10px;
+    }
+
+    nav a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    footer a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    strong {
+        font-size: 14px;
+    }
+}
+
+
+/* Base styles */
+body {
+    background-color: #FFF8EA;
+    font-family: "Poppins";
+    margin: 0 20%;
+}
+
+h1 {
+    color: #594545;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #815B5B;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    padding: 10px;
+    color: #594545;
+}
+
+nav {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+nav a {
+    padding: 0 5px;
+    color: #815B5B;
+    text-decoration: none;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+a:hover {
+    color: #9E7676;
+}
+
+img {
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 15px;
+    color: #594545;
+}
+
+
+
+li {
+    color: 9E7676;
+    padding-top: 0.5px;
+}
+
+strong {
+    color: #815B5B ;
+}
+
+/* Footer */
+footer {
+    padding-top: 15px;
+    color: #d4dffa;
+}
+
+footer a {
+    color: #815B5B;
+    padding: 0 5px;
+}
+
+#validation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-small;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header h1 {
+    text-align: center;
+    color: #0000FF;
+  }
+  
+  nav ul {
+    display: inline;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+  }
+
+h2{
+  text-decoration: dotted;
+}

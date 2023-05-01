@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main>
+        <h3>My Tabular Data</h3>
+        <h3>Employee Data in Simple Table</h3>
+        <table class="table1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+
+            </tr>
+
+            <tr>
+                <td>Malek Rhaouate</td>
+                <td>mrhaouat@gmail.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mo Dee</td>
+                <td>mdee99@gmail.com</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Lee Yu</td>
+                <td>lyu099@gmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>David McLee</td>
+                <td>dmclee@gmail.com</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Robert Jay</td>
+                <td>rjay99@gmail.com</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Luis Thomas</td>
+                <td>lthoma@gmail.com</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Ray Hamilton</td>
+                <td>rhamil@gmail.com</td>
+                <td>1</td>
+            </tr>
+
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Table for Employee Informaiton</figcaption>
+            <table class="table2">
+                <tr>
+
+                    <th>Job Title</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+
+
+                </tr>
+                <tr>
+                    <td rowspan="2">HR</td>
+                    <td>Ray Hamilton</td>
+                    <td>rhamil@gmail.com</td>
+                    <td>1</td>
+                    <td>$67,000</td>
+                </tr>
+                <tr>
+
+                    <td>Luis Thomas</td>
+                    <td>lthoma@gmail.com</td>
+                    <td>18</td>
+                    <td>$99,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="3"> Engineering Department </td>
+                    <td>Malek Rhaouate</td>
+                    <td>mrhaouat@gmail.com</td>
+                    <td>10</td>
+                    <td>$150,000</td>
+
+                </tr>
+                <tr>
+
+                    <td>Mo Dee</td>
+                    <td>mdee99@gmail.com</td>
+                    <td>45</td>
+                    <td>$250,000</td>
+                </tr>
+                <tr>
+
+                    <td>David McLee</td>
+                    <td>dmclee@gmail.com</td>
+                    <td>4</td>
+                    <td>$93,400</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">IT</td>
+                    <td>Luis Thomas</td>
+                    <td>lthoma@gmail.com</td>
+                    <td>18</td>
+                    <td rowspan="1">$123,000</td>
+                </tr>
+                <tr>
+                    <td>Mo Dee</td>
+                    <td>mdee99@gmail.com</td>
+                    <td>45</td>
+                    <td>$195,000</td>
+
+                </tr>
+                <tr>
+
+                    <td>Robert Jay</td>
+                    <td>rjay99@gmail.com</td>
+                    <td>16</td>
+                    <td>$135,000</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total Years of Service</td>
+                    <td>157</td>
+                    <td>Total Salary Sum: $1,112,000</td>
+                </tr>
+
+            </table>
+
+        </figure>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

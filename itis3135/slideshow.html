@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main>
+        <h2 class="slide-show" >Slidesshow</h2>
+
+        <div class="slideshow-container" id="slideshow-container">
+            <img class="slide-img-1" src="images/fox.jpg">
+            <img class="slide-img-2" src="images/fox1.jpg">
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>            
+          </div>
+
+
+        
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+<script src="scripts/slideshow.js"></script>
+
+</html>
+
+
+<!-- https://colorhunt.co/palette/f3efe043424222222222a39f-->

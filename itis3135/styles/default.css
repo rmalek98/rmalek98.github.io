@@ -1,0 +1,288 @@
+/* set all pages height to 100% */
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page-1 {
+  height: 70vh;
+}
+.contract{
+  height: 65vh;
+}
+
+.array{
+  height: 65vh;
+}
+
+.calculator{
+  height: 65vh;
+}
+
+.polygon{
+  height: 65vh;
+}
+.form{
+  height: 65vh;
+}
+
+body {
+    color: #F3EFE0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #434242;
+}
+
+main{
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* nav li {
+    color: #F3EFE0;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+} */
+
+header{
+  text-align: center;
+}
+
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  a{
+    color: #F3EFE0;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+  
+#intro-myname{
+  text-align:center;
+} 
+  
+.figure-img-1{
+  text-align: center;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+
+.intro-p-1{
+  margin-left: 30px;
+  margin-right: 5px;
+}
+
+.intro-malek-img{
+  text-align: center;
+}
+
+.intro-malek-fig{
+  text-align: center;
+}
+
+
+/* Table */
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+thread  {
+    background-color: #434242;
+}
+th, td {
+    border: 1px solid black;
+    padding: .2em 1em .2em .5em;
+    text-align: left;
+    vertical-align: middle;
+}
+right {
+    text-align: right;
+}
+
+
+form {
+    padding: 10px;
+    display: block;
+}
+
+input {
+    margin: 5px 5px 10px 10px;
+}
+
+fieldset {
+    margin: 10px 0px 10px 0px;
+}
+
+
+
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #F3EFE0;
+  text-align: center;
+}
+
+
+/* First Scripts page */
+
+.date{
+  text-align: center;
+}
+.greeting{
+  padding: auto;
+}
+
+/* array tab */
+
+
+.array-h2{
+  text-align: center;
+}
+
+.table-array{
+  border-width: 0px;
+  border-style:none;
+}
+
+/* Slide Show */
+
+/* .slide-show{
+  text-align: center;
+  margin: 0; 
+  padding: 0; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+#slideshow-container {
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
+  padding: 15em; 
+
+}
+
+.slide-img {
+  max-width: 450px;
+  border: 4px solid #2A3965;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slideshow-container{
+  
+  justify-content: center;
+
+}
+
+.slide-img-1{
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 25rem;
+  width: 25rem;
+  margin : auto 6vh;
+
+}
+
+.slide-img-2{
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 25rem;
+  width: 25rem;
+  margin : auto 6vh;
+  
+}
+
+#slideshow-container {
+  position: relative;
+  height: 400px;
+}
+
+
+#slideshow-container img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slideshow-container img:first-child {
+  opacity: 1;
+}
+
+#slideshow-container a {
+  position: absolute;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#slideshow-container .prev {
+  left: 0;
+}
+
+#slideshow-container .next {
+  right: 0;
+}
+
+
+
+
+/* Client project design */
+#Zahra-wireframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#Zahra-WfFc{
+  padding-top: 0.5em;
+  text-align: center;
+}

@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+html {
+    position: relative;
+    overflow-x: hidden !important;
+  }
+
+body {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(207, 174, 174);
+  font-family: 'Poppins', sans-serif;
+  color:rgb(57, 57, 57);
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+
+nav a {
+    padding: 0 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.dark nav a {
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    color: #7c6666;
+}
+
+.dark nav a:hover {
+    color: rgb(132, 123, 123);
+}
+
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 50px 0 10px 0;
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+a {
+  color:rgb(130, 62, 173);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.dark a {
+  color:rgb(139, 134, 139);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(39, 38, 38);
+  position: relative;
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: 
+    inset 4px 4px 4px rgb(255,255,255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+  background-color: rgb(57, 57, 57);
+  transition: 0.3s;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+ color:rgb(255, 255, 255);
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-text {
+  padding: 30px;
+  margin-bottom: 100px;
+}
+
+#html {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("images/html-square.png");
+  background-size: cover;
+  background-color: rgb(175, 119, 227);
+  box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
+}
+
+#html:before {
+  background-color: rgb(189, 154, 221);
+}
+
+#html:after {
+  background-color: rgb(205, 188, 221);
+}
+
+#css {
+  left: 250px;
+  bottom: 240px;
+  
+  background-color: rgb(227, 119, 191);
+  box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+
+#css:before {
+  background-color: rgb(221, 154, 207);
+}
+
+#css:after {
+  background-color: rgb(221, 188, 211);
+}
+
+#javascript {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("images/javascript-square.png");
+  background-size: cover;
+  background-color: rgb(119, 227, 186);
+  box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
+}
+
+#javascript:before {
+  background-color: rgb(154, 221, 202);
+}
+
+#javascript:after {
+  background-color: rgb(188, 221, 212);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* .dark footer {
+  
+} */
+
+@media only screen and (min-width: 970px) {
+  .main-text {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+ 
+}
+
+/* Home text animation */
+.myWord{
+    font-size: 20px;
+  }
+  
+  .word .cursor{
+   display:inline-block;
+   min-width:1px;
+   background:#FFF;
+   margin-left:-0.5em;
+   margin-top:-0.1em;
+   height:0.5em;
+   vertical-align: middle;
+   animation: blinkCursor 1s infinite;
+  }
+
+  @keyframes blinkCursor{
+    0% { opacity:1; }
+    80%{ opacity:1; }
+    80.1%{ opacity:0; }
+    100%{ opacity:0; }
+  }
+
+  /*  */
+  
+  /* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;400;700&display=swap');
+
+
+strong {
+    font-weight: 700;
+}
+.subtitle{
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1792d2;
+  letter-spacing: 0.05em;
+  font-family: 'Ubuntu Bold', sans-serif;
+}
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+.article-info {
+    margin: 2em 0;
+}
+
+.container-flex{
+  max-width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+
+img{
+  max-width: 100%;
+  display: block;
+}
+main{
+  max-width: 75%;
+}
+.article-body{
+  width: 100%;
+  text-align: justify;
+}
+.sidebar{
+  max-width: 23%;
+}
+
+@media (max-width:1050px){
+  .container-flex{
+    flex-direction: column;
+  }
+  .site-title, .subtitle{
+    width: 100%;
+  }
+  main{
+    max-width: 100%;
+  }
+  .sidebar{
+    max-width: 100%;
+  }
+  
+}
+@media (max-width: 500px){
+  nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+  nav li{
+    margin: 0.5em 0;
+  }
+}
+
+/* articles */
+.article-featured {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+@media (min-width: 675px) {
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .article-recent-main {
+        width: 68%;
+    }
+    
+    .article-recent-secondary {
+        width: 30%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main class="form">
+
+        <table>
+            <tr>
+                <td>
+                    <form action="#">
+                        <div>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="fname" id="fname" required placeholder="First Name">
+                        </div>
+
+                        <div>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label for="phonenumber">number:</label>
+                            <input type="tel" name="phonenumber" id="phonenumber" required placeholder="Phone number"
+                                minlength="12" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required placeholder="Email">
+                        </div>
+                        <label for="work">Work:</label>
+                        <select name="work" id="work">
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="personalportfolio">Personal Portfolio</option>
+                            <option value="website">Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <fieldset>
+                            <legend>Best time to reach:</legend>
+                            <input id="mail" type="checkbox" name="mail" value="mail">
+                            <label for="receiveemails">Email</label>
+                            <label><input type="radio" name="phone" id="phone" value="phone">Phone</label>
+                        </fieldset>
+
+                        <input type="reset" value="Reset" class="button">
+                        <input type="submit" value="Submit" class="button">
+                    </form>
+                </td>
+            </tr>
+
+        </table>
+
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

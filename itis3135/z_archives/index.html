@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with Navigation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Template with Navigation</h1>
+        <nav id="siteLinks">Nav Links here</nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed minima voluptas est earum voluptates amet harum vero ex? Voluptas, odio impedit! Facere placeat reprehenderit eaque harum doloremque impedit perferendis.</p>
+        <p>Asperiores quae similique voluptatem suscipit voluptatum iste molestiae illum eos labore earum sint eveniet ipsum dolor incidunt consequatur rerum nostrum repellendus harum ut, non, nobis veritatis excepturi facilis beatae. Quas!</p>
+        <p>Asperiores facilis vel modi aperiam nostrum officia. Quo fugit cum animi totam, voluptatum eum error. Quae obcaecati incidunt fuga ratione magnam, dolores doloribus consequatur perspiciatis reiciendis dicta sed voluptatibus vitae?</p>
+        <p>Esse est impedit accusamus omnis illum? Praesentium rerum placeat officiis enim quas, delectus adipisci error dicta voluptas qui ducimus ratione sit alias repellendus maxime nam repudiandae reprehenderit atque neque doloribus?</p>
+    </main>
+    <footer>Copyright</footer>
+    <script>
+        $(function(){
+            // to check js is loaded in console
+            console.log('loaded');
+            const pathname = String(location.pathname.split("/").slice(-1));
+            const links = {
+                "1":{
+                    "url": "index.html",
+                    "text": "Home",
+                    "alt": "Home Page"
+                },
+                "2":{
+                    "url": "about.html",
+                    "text": "About",
+                    "alt": "About Page"
+                },
+                "3":{
+                    "url": "contact.html",
+                    "text": "Contact",
+                    "alt": "Contact Page"
+                }
+            };
+
+            const linkSeparator = " | ";
+
+            let htmlString = "";
+
+            for (var id in links) {
+
+                if (pathname === links[id]['url']){
+                    htmlString += links[id]['text'];
+                } else {
+                    htmlString += '<a href="' + links[id]['url'] + '" alt="' + links[id]['alt'] + '">' + links[id]['text'] + '</a>';
+                } 
+                if (Number(id) > Object.keys(links).length){
+                    htmlString += linkSeparator;
+                }
+            }
+            $('#siteLinks').html(htmlString);
+
+        });
+    </script>
+</body>
+</html>

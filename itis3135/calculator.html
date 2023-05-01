@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main class="calculator">
+
+        <!--  -->
+        <div class="calculator">
+            <input class="calDisplay" type="text" id="result" disabled>
+            <table class="tab">
+                <tr>
+                    <td><button onclick="addNumber('7')">7</button></td>
+                    <td><button onclick="addNumber('8')">8</button></td>
+                    <td><button onclick="addNumber('9')">9</button></td>
+                    <td><button onclick="addOperator('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber('4')">4</button></td>
+                    <td><button onclick="addNumber('5')">5</button></td>
+                    <td><button onclick="addNumber('6')">6</button></td>
+                    <td><button onclick="addOperator('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="addNumber('1')">1</button></td>
+                    <td><button onclick="addNumber('2')">2</button></td>
+                    <td><button onclick="addNumber('3')">3</button></td>
+                    <td><button onclick="addOperator('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="clearResult()">C</button></td>
+                    <td><button onclick="addNumber('0')">0</button></td>
+                    <td><button onclick="calculateResult()">=</button></td>
+                    <td><button onclick="addOperator('/')">/</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <style>
+            .calDisplay{   
+            margin-left: 0px;
+            width: 195px;
+            }
+            .calculator {
+                margin: auto;
+                width: 200px;
+                text-align: center;
+            }
+
+            .calculator input[type="text"] {
+                margin-bottom: 5px;
+                font-size: 24px;
+                text-align: right;
+            }
+
+            .calculator table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .calculator td {
+                padding: 5px;
+            }
+
+            .calculator button {
+                width: 100%;
+                height: 40px;
+                font-size: 16px;
+            }
+        </style>
+
+        <script>
+            let operator = "";
+            let operand1 = 0;
+            let operand2 = 0;
+            let result = 0;
+
+            const addNumber = (number) => {
+                document.getElementById("result").value += number;
+            };
+
+            const addOperator = (op) => {
+                operator = op;
+                operand1 = parseFloat(document.getElementById("result").value);
+                document.getElementById("result").value = "";
+            };
+
+            const clearResult = () => {
+                document.getElementById("result").value = "";
+                operator = "";
+                operand1 = 0;
+                operand2 = 0;
+                result = 0;
+            };
+
+            const calculateResult = () => {
+                operand2 = parseFloat(document.getElementById("result").value);
+                switch (operator) {
+                    case "+":
+                        result = operand1 + operand2;
+                        break;
+                    case "-":
+                        result = operand1 - operand2;
+                        break;
+                    case "*":
+                        result = operand1 * operand2;
+                        break;
+                    case "/":
+                        result = operand1 / operand2;
+                        break;
+                    default:
+                        result = 0;
+                }
+                document.getElementById("result").value = result;
+                operator = "";
+                operand1 = 0;
+                operand2 = 0;
+                result = 0;
+            };
+
+        </script>
+        <!--  -->
+
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>
+
+
+<!-- https://colorhunt.co/palette/f3efe043424222222222a39f-->

@@ -1,0 +1,212 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,400&display=swap"
+    rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+        width: 60%;
+        margin: 20px auto;
+        padding: 3%;
+        background-color: #95074010;
+        border-radius: 5px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.07);
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2 {
+        font-weight: 600;
+        color: #950740;
+    }
+
+    h1 {
+        font-size: 38px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    /* hr */
+    .colour {
+        margin: 40px 0;
+        background-color: #950740;
+    }
+
+    .pastaimg {
+        position: relative;
+    }
+
+    .pastaimg img {
+        margin-bottom: 30px;
+        border-radius: 5px;
+        width: 100%;
+        height: 60vh;
+        object-position: 100% 35%;
+        object-fit: cover;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
+    }
+
+    .pastaimg figcaption {
+        font-weight: 500;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        bottom: 40px;
+        right: 10px;
+    }
+
+    figcaption span {
+        color: #950740;
+        font-weight: 600;
+    }
+
+    .flexstyle {
+        display: flex;
+        align-items: center;
+    }
+
+    .description {
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    .recipe_details {
+        margin: 20px;
+        padding: 40px 20px 40px 0;
+        background-color: #95074010;
+        border-radius: 5px;
+    }
+
+    p {
+        padding-bottom: 10px;
+    }
+
+    .description figure {
+        position: relative;
+    }
+
+    .description figure img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.06);
+        margin-top: 20px;
+    }
+
+    .description figcaption {
+        position: absolute;
+        bottom: 3px;
+        left: 3px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    strong {
+        color: #c3073f;
+    }
+
+    li {
+        margin-bottom: 1.5%;
+    }
+
+    ol ul {
+        margin: 3% 0%;
+    }
+
+    @media only screen and (max-width: 760px) {
+        .container {
+            width: 100%;
+        }
+
+        .description {
+            width: 100%;
+        }
+
+        .flexstyle {
+            display: block;
+        }
+    }
+</style>
+
+<div class="container">
+
+    <h1>Pasta with Pesto and Tomatoes</h1>
+
+    <div class="pastaimg">
+        <figure>
+            <img src="images/lg-cheese-pizza.png" alt="Cheese pizza">
+        </figure>
+    </div>
+
+    <div class="content">
+
+        <p>This quick and delicious cheese pizza is the perfect way to indulge in a classic comfort food. With gooey
+            melted cheese and a crispy crust, it's sure to satisfy any pizza cravings. <br></p>
+        <p>Don't have time to make pizza dough from scratch? No problem! You can easily make this pizza using a pre-made
+            crust or even a frozen pizza crust. </p>
+        <div class="flexstyle">
+
+            <div class="description">
+                <figure>
+                    <img src="https://assets.codepen.io/652/tamanna-rumee-nswz6tIpgZk-unsplash.jpg"
+                        alt="tomato halves surrounded by basil leaves and peppercorns.">
+                </figure>
+            </div>
+
+            <div class="recipe_details">
+                <ul>
+                    <li>Servings: <strong>2</strong></li>
+                    <li>Prep Time: <strong>10</strong> minutes</li>
+                    <li>Cook Time: <strong>10-12</strong> minutes</li>
+                    <li>Total Time: <strong>30</strong> minutes</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="colour">
+
+        <h2>The Ingredients</h2>
+        <ul class="ingredients">
+            <li>Preheat your oven to 450°F (230°C). If you have a pizza stone, place it in the oven to preheat as well.
+            </li>
+            <li>Roll out your pizza dough on a floured surface until it's about 12 inches in diameter.</li>
+            <li>Transfer the dough to a pizza peel or a sheet of parchment paper.</li>
+            <li>Spread the tomato sauce over the dough, leaving about 1/2 inch around the edges.</li>
+            <li>Sprinkle the shredded mozzarella cheese over the sauce.</li>
+            <li> Sprinkle the grated parmesan cheese over the mozzarella.</li>
+            <li> Drizzle the olive oil over the cheese.</li>
+            <li> Add salt and pepper to taste.</li>
+            <li> Transfer the pizza to the preheated pizza stone or place the parchment paper on a baking sheet and
+                place in the oven.</li>
+            <li> Bake for 10-12 minutes, or until the cheese is melted and bubbly and the crust is golden brown.</li>
+            <li> Remove from the oven and let cool for a few minutes before slicing and serving.</li>
+
+        </ul>
+
+        <hr class="colour">
+
+        <h2>Tips</h2>
+        <ol class="instructions">
+            <ul>
+                <li>For an extra crispy crust, preheat your pizza stone in the oven for at least 30 minutes before
+                    baking your pizza on it.</li>
+                <li>You can also sprinkle some garlic powder or dried oregano over the pizza before baking for added
+                    flavor.</li>
+                <li>If you like a little spice, try adding some red pepper flakes to the sauce or sprinkling them over
+                    the pizza before baking.</li>
+
+            </ul>
+        </ol>
+        <p>There you have it, a classic cheese pizza that you can make at home. Experiment with different cheeses or toppings to make it your own. Enjoy!</p>
+    </div>
+</div>

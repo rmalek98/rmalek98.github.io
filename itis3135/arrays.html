@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main class="array">
+
+        <h2 class="array-h2">Employee</h2>
+
+         <!-- ################################################################################################ -->
+
+        <div class="array-emp">
+            <!-- <form id="add_form" name="add_form">
+                <label for="employee_list">Select an employee:</label>
+                <br>
+                <select id="employee_list" name="employee_list">
+                    <option value="0" selected>-- Select --</option>
+                    <option value="1">Malek Rhaouate</option>
+                    <option value="2">CJ </option>
+                    
+                </select>
+                <br>
+                <label for="salary_input">Enter salary:</label>
+                <input type="text" id="salary_input">
+                <br>
+                <button type="button" onclick="addSalary()">Add Salary</button>
+                <br>
+                <button type="button" onclick="displaySalary()">Display Salary</button>
+                <br>
+                <button type="button" onclick="displayResults()">Display Results</button>
+            </form> -->
+
+            <form id="add_form" name="add_form">
+            <table class="table-array" id="table">
+                <thead>
+                    <tr>
+                        <th><label for="employee_list">Select an employee:</label></th>
+                        <th><select id="employee_list" name="employee_list">
+                            <option value="0" selected>-- Select --</option>
+                            <option value="1">Malek Rhaouate</option>
+                            <option value="2">CJ </option>
+                            
+                        </select></th>
+                    </tr>
+                    <tr>
+                        <th><label for="salary_input">Enter salary:</label></th>
+                        <th> <input type="text" id="salary_input"></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" onclick="addSalary()">Add Salary</button></th>
+                        <th><button type="button" onclick="displaySalary()">Display Salary</button></th>
+                        <tr>
+                            <th><button type="button" onclick="clearData()">Reset</button></th>
+                            <th><button type="button" onclick="displayResults()">Display Results</button></th>
+                        </tr>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+
+
+    
+            <div id="results"></div>
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        
+                <!-- ################################################################################################ -->
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+<script src="scripts/arrays.js"></script>
+</html>
+
+
+<!-- https://colorhunt.co/palette/f3efe043424222222222a39f-->

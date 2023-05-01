@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+   <title> ITIS-3135 | Malek Rhaouate's Magical Red Fox | Home </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Slab:wght@500&display=swap"
+       rel="stylesheet">
+   <link rel="stylesheet" href="styles/default.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       $(function () {
+           $("#header").load("header.html");
+           $("#footer").load("footer.html");
+       });
+   </script>
+   
+</head>
+
+<body>
+   <header>
+       <div id="header"></div>
+   </header>
+    <main>
+       
+        <div class="date" >
+            <h3>
+                <script>
+                    // Create a new date object
+                    const currentDate = new Date();
+        
+                    // Get the date string without seconds
+                    const dateWithoutSeconds = currentDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        
+                    // Get the day of the week
+                    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    const dayOfWeek = daysOfWeek[currentDate.getDay()];
+                    // Output the date and day
+                    document.write(`Today is ${dayOfWeek}, ${dateWithoutSeconds}`);
+                </script>
+            </h3>
+        </div>
+        
+
+        <!-- using two text fields ask the user for their name and how they're feeling with some way for the user to submit this info. -->
+
+        <div class="greeting">
+            <h2>Let us greet you!</h2>
+            <form>
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name"><br><br>
+             <label for="feeling">How are you feeling?</label>
+             <input type="text" id="feeling" name="feeling"><br><br>
+             <input type="button" value="Submit" onclick="submitInfo()">
+             </form>
+             <p id="greeting"></p>
+        </div>
+
+        <div class="">
+            <h2>Change my Picture!</h2>
+            
+                <button onclick=img()>Click me to change</button>
+                <img id="fox" src="images/fox.jpg" alt="fox" width="200" height="200">
+
+
+        </div>
+        
+        <div class="">
+            <h2>Let's play a game!</h2>
+            <button onclick="guess()">Guess the number before clicking</button>
+            <p id="guess"></p>
+        </div>
+
+        <!-- add numbers -->
+
+        <div class="">
+            <h2>Let's add some numbers!</h2>
+            <form>
+                <label for="num1">Number 1:</label>
+                <input type="text" id="num1" name="num1"><br><br>
+                <label for="num2">Number 2:</label>
+                <input type="text" id="num2" name="num2"><br><br>
+                <input type="button" value="Submit" onclick="add()">
+            </form>
+            <p id="result"></p>
+
+
+           
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+<script src="scripts/defaults.js"></script>
+
+</html>
+
+
+<!-- https://colorhunt.co/palette/f3efe043424222222222a39f-->
