@@ -286,3 +286,35 @@ footer {
   padding-top: 0.5em;
   text-align: center;
 }
+
+/* Calc try */
+.calDisplay{   
+  margin-left: 0px;
+  width: 195px;
+  }
+  .calculator {
+      margin: auto;
+      width: 200px;
+      text-align: center;
+  }
+
+  .calculator input[type="text"] {
+      margin-bottom: 5px;
+      font-size: 24px;
+      text-align: right;
+  }
+
+  .calculator table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+
+  .calculator td {
+      padding: 5px;
+  }
+
+  .calculator button {
+      width: 100%;
+      height: 40px;
+      font-size: 16px;
+  }
